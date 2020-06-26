@@ -2,6 +2,10 @@
 
 A simple project made for fetching weather informations from browser geolocation or city.
 
+## Warning !!
+
+Google places API is not included because it requires billing account now. :( Sniff sniff.
+
 ## Installation guide
 
 1. Fetch this repository
