@@ -5,7 +5,7 @@
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 html {
   height: 100%;
@@ -20,7 +20,8 @@ body {
   text-align: center;
   color: #fff;
   min-height: 100vh;
-  background-image: url("https://www.itl.cat/pngfile/big/57-570951_mountain-above-clouds-background.jpg");
+  background-image: url("https://www.itl.cat/pngfile/big/57-570951_mountain-above-clouds-background.jpg"),
+    linear-gradient(to right, rgba(255, 0, 0, 0), rgba(102, 13, 13, 0.986));
   background-size: cover;
   background-blend-mode: saturation;
   background-repeat: no-repeat;

@@ -35,12 +35,17 @@ export default {
 $bg: rgba(169, 160, 160, 0.6);
 .home {
   max-width: 400px;
+  @media (max-width: 460px) {
+    margin: 0px 0.5rem;
+  }
 }
 p {
-  color: #a9a0a0;
-
+  color: #999898;
+  font-weight: 500;
+  font-size: 15px;
   strong {
     color: #fff;
+    font-weight: 600;
   }
 }
 form {
@@ -55,7 +60,7 @@ form {
   color: #fff;
   height: calc(100% - 2px);
   padding: 0px 10px;
-  flex: 1;
+  flex: 2;
   outline: none;
   &:focus {
     outline: none;
