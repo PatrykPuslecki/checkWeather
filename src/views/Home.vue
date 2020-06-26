@@ -23,6 +23,11 @@ export default {
   components: {
     detailsBox,
   },
+  data: function() {
+    return {
+      city: "",
+    };
+  },
 };
 </script>
 
