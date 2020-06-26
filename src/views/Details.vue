@@ -119,6 +119,9 @@ export default {
     td {
       padding: 20px 10px;
     }
+    thead td {
+      font-weight: 600;
+    }
     tbody td {
       background: rgba(169, 160, 160, 0.6);
     }

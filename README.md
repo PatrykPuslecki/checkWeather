@@ -1,24 +1,14 @@
-# checkweather
+# AirAPP
 
-## Project setup
-```
-npm install
-```
+A simple project made for fetching weather informations from browser geolocation or city.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Installation guide
 
-### Compiles and minifies for production
-```
-npm run build
-```
+1. Fetch this repository
+2. npm install
+3. npm run serve
+4. And voilla, application should work!
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Copyright
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+©Patryk Puślecki 2020 - forever
