@@ -10,7 +10,7 @@
         </span>
         <span>
           <strong>Location:</strong>
-          {{ this.infos.city.name}}, {{ this.infos.city.country }}
+          {{ this.infos.city.name }}, {{ this.infos.city.country }}
         </span>
       </div>
 
@@ -26,8 +26,8 @@
           <tbody>
             <tr v-for="singleHour in this.infos.list" :key="singleHour.dt">
               <td>{{ formatToHour(singleHour.dt_txt) }}</td>
-              <td>{{Math.round(singleHour.main.temp)}}°C</td>
-              <td>{{singleHour.weather[0].description}}</td>
+              <td>{{ Math.round(singleHour.main.temp) }}°C</td>
+              <td>{{ singleHour.weather[0].description }}</td>
             </tr>
           </tbody>
         </table>
@@ -46,24 +46,23 @@ export default {
   data: function() {
     return {
       currentDate: moment().format("DD-MM-YYYY"),
-      infos: {}
+      infos: {},
     };
   },
   methods: {
     formatToHour(date) {
-      let formattedDate = new Date(date);
-      return moment(formattedDate).format("HH:mm");
+      return moment(date, "YYYY-MM-DD hh-mm-ss").format("HH:mm");
     },
     getWeather(url) {
       axios
         .get(url)
-        .then(response => {
+        .then((response) => {
           this.infos = response.data;
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
-    }
+    },
   },
   beforeMount() {
     if (!this.city) {
@@ -71,7 +70,7 @@ export default {
     } else {
       this.getWeather(API_HOURLY_URL + "&q=" + this.city + API_KEY + "&cnt=6");
     }
-  }
+  },
 };
 </script>
 
